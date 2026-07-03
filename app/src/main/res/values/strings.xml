@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CampusFix</string>
+    <string name="app_slogan">Gestão de pedidos no campus</string>
+
+    <!-- Autenticação -->
+    <string name="login_title">Iniciar sessão</string>
+    <string name="register_title">Criar conta</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirmar password</string>
+    <string name="nome">Nome</string>
+    <string name="tipo_perfil">Tipo de perfil</string>
+    <string name="perfil_utilizador">Utilizador</string>
+    <string name="perfil_admin">Administrador</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_registar">Registar</string>
+    <string name="sem_conta_registar">Não tem conta? Criar conta</string>
+    <string name="ja_tem_conta">Já tem conta? Iniciar sessão</string>
+    <string name="terminar_sessao">Terminar sessão</string>
+
+    <!-- Validação -->
+    <string name="erro_campo_obrigatorio">Campo obrigatório</string>
+    <string name="erro_email_invalido">Email inválido</string>
+    <string name="erro_password_curta">A password deve ter pelo menos 6 caracteres</string>
+    <string name="erro_passwords_diferentes">As passwords não coincidem</string>
+    <string name="erro_autenticacao">Falha na autenticação. Verifique as credenciais.</string>
+    <string name="erro_registo">Falha ao criar conta. Tente novamente.</string>
+    <string name="erro_carregar_dados">Erro ao carregar dados</string>
+    <string name="erro_guardar">Erro ao guardar</string>
+
+    <!-- Navegação / tabs -->
+    <string name="tab_pedidos">Pedidos</string>
+    <string name="tab_historico">Histórico</string>
+    <string name="tab_perfil">Perfil</string>
+    <string name="tab_categorias">Categorias</string>
+    <string name="tab_estatisticas">Estatísticas</string>
+    <string name="voltar">Voltar</string>
+
+    <!-- Pedidos -->
+    <string name="meus_pedidos">Os meus pedidos</string>
+    <string name="todos_pedidos">Todos os pedidos</string>
+    <string name="novo_pedido">Novo pedido</string>
+    <string name="detalhe_pedido">Detalhe do pedido</string>
+    <string name="categoria">Categoria</string>
+    <string name="localizacao">Localização</string>
+    <string name="descricao">Descrição</string>
+    <string name="fotografia">Fotografia</string>
+    <string name="escolher_foto">Escolher fotografia</string>
+    <string name="remover_foto">Remover fotografia</string>
+    <string name="data_criacao">Data de criação</string>
+    <string name="estado">Estado</string>
+    <string name="criado_por">Criado por</string>
+    <string name="btn_submeter">Submeter pedido</string>
+    <string name="btn_cancelar_pedido">Cancelar pedido</string>
+    <string name="btn_eliminar_pedido">Eliminar pedido</string>
+    <string name="alterar_estado">Alterar estado</string>
+    <string name="pedido_criado">Pedido criado com sucesso</string>
+    <string name="pedido_cancelado">Pedido cancelado</string>
+    <string name="pedido_eliminado">Pedido eliminado</string>
+    <string name="sem_pedidos">Sem pedidos para mostrar</string>
+    <string name="pesquisar">Pesquisar…</string>
+    <string name="filtro_todos">Todos</string>
+    <string name="ordenar_data">Ordenar por data</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar_cancelar_pedido">Tem a certeza que quer cancelar este pedido?</string>
+    <string name="confirmar_eliminar_pedido">Tem a certeza que quer eliminar este pedido?</string>
+
+    <!-- Estados -->
+    <string name="estado_submetido">Submetido</string>
+    <string name="estado_em_analise">Em análise</string>
+    <string name="estado_concluido">Concluído</string>
+    <string name="estado_rejeitado">Rejeitado</string>
+
+    <!-- Histórico -->
+    <string name="historico_titulo">Histórico de pedidos concluídos</string>
+
+    <!-- Perfil -->
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="nova_password_opcional">Nova password (opcional)</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="perfil_atualizado">Perfil atualizado</string>
+    <string name="modo_escuro">Modo escuro</string>
+
+    <!-- Categorias -->
+    <string name="gerir_categorias">Gerir categorias</string>
+    <string name="nova_categoria">Nova categoria</string>
+    <string name="editar_categoria">Editar categoria</string>
+    <string name="nome_categoria">Nome da categoria</string>
+    <string name="btn_adicionar">Adicionar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="sem_categorias">Sem categorias registadas</string>
+    <string name="confirmar_eliminar_categoria">Eliminar esta categoria?</string>
+
+    <!-- Estatísticas -->
+    <string name="estatisticas_titulo">Estatísticas</string>
+    <string name="total_pedidos">Total de pedidos</string>
+</resources>

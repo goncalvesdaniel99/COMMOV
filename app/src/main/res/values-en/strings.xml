@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CampusFix</string>
+    <string name="app_slogan">Campus service requests</string>
+
+    <!-- Authentication -->
+    <string name="login_title">Sign in</string>
+    <string name="register_title">Create account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="nome">Name</string>
+    <string name="tipo_perfil">Profile type</string>
+    <string name="perfil_utilizador">User</string>
+    <string name="perfil_admin">Administrator</string>
+    <string name="btn_entrar">Sign in</string>
+    <string name="btn_registar">Register</string>
+    <string name="sem_conta_registar">No account? Create one</string>
+    <string name="ja_tem_conta">Already have an account? Sign in</string>
+    <string name="terminar_sessao">Sign out</string>
+
+    <!-- Validation -->
+    <string name="erro_campo_obrigatorio">Required field</string>
+    <string name="erro_email_invalido">Invalid email</string>
+    <string name="erro_password_curta">Password must have at least 6 characters</string>
+    <string name="erro_passwords_diferentes">Passwords do not match</string>
+    <string name="erro_autenticacao">Authentication failed. Check your credentials.</string>
+    <string name="erro_registo">Failed to create account. Try again.</string>
+    <string name="erro_carregar_dados">Error loading data</string>
+    <string name="erro_guardar">Error saving</string>
+
+    <!-- Navigation / tabs -->
+    <string name="tab_pedidos">Requests</string>
+    <string name="tab_historico">History</string>
+    <string name="tab_perfil">Profile</string>
+    <string name="tab_categorias">Categories</string>
+    <string name="tab_estatisticas">Statistics</string>
+    <string name="voltar">Back</string>
+
+    <!-- Requests -->
+    <string name="meus_pedidos">My requests</string>
+    <string name="todos_pedidos">All requests</string>
+    <string name="novo_pedido">New request</string>
+    <string name="detalhe_pedido">Request details</string>
+    <string name="categoria">Category</string>
+    <string name="localizacao">Location</string>
+    <string name="descricao">Description</string>
+    <string name="fotografia">Photo</string>
+    <string name="escolher_foto">Choose photo</string>
+    <string name="remover_foto">Remove photo</string>
+    <string name="data_criacao">Creation date</string>
+    <string name="estado">Status</string>
+    <string name="criado_por">Created by</string>
+    <string name="btn_submeter">Submit request</string>
+    <string name="btn_cancelar_pedido">Cancel request</string>
+    <string name="btn_eliminar_pedido">Delete request</string>
+    <string name="alterar_estado">Change status</string>
+    <string name="pedido_criado">Request created successfully</string>
+    <string name="pedido_cancelado">Request cancelled</string>
+    <string name="pedido_eliminado">Request deleted</string>
+    <string name="sem_pedidos">No requests to show</string>
+    <string name="pesquisar">Search…</string>
+    <string name="filtro_todos">All</string>
+    <string name="ordenar_data">Sort by date</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cancelar">Cancel</string>
+    <string name="confirmar_cancelar_pedido">Are you sure you want to cancel this request?</string>
+    <string name="confirmar_eliminar_pedido">Are you sure you want to delete this request?</string>
+
+    <!-- Status -->
+    <string name="estado_submetido">Submitted</string>
+    <string name="estado_em_analise">In review</string>
+    <string name="estado_concluido">Completed</string>
+    <string name="estado_rejeitado">Rejected</string>
+
+    <!-- History -->
+    <string name="historico_titulo">Completed requests history</string>
+
+    <!-- Profile -->
+    <string name="editar_perfil">Edit profile</string>
+    <string name="nova_password_opcional">New password (optional)</string>
+    <string name="btn_guardar">Save</string>
+    <string name="perfil_atualizado">Profile updated</string>
+    <string name="modo_escuro">Dark mode</string>
+
+    <!-- Categories -->
+    <string name="gerir_categorias">Manage categories</string>
+    <string name="nova_categoria">New category</string>
+    <string name="editar_categoria">Edit category</string>
+    <string name="nome_categoria">Category name</string>
+    <string name="btn_adicionar">Add</string>
+    <string name="eliminar">Delete</string>
+    <string name="editar">Edit</string>
+    <string name="sem_categorias">No categories yet</string>
+    <string name="confirmar_eliminar_categoria">Delete this category?</string>
+
+    <!-- Statistics -->
+    <string name="estatisticas_titulo">Statistics</string>
+    <string name="total_pedidos">Total requests</string>
+</resources>
