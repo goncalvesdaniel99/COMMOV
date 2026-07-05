@@ -111,7 +111,9 @@ fun LoginScreen(
         Button(
             onClick = { if (validar()) viewModel.login(email.trim(), password) },
             enabled = !loading,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(52.dp)
         ) {
             if (loading) {
                 CircularProgressIndicator(modifier = Modifier.size(20.dp), strokeWidth = 2.dp)

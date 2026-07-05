@@ -1,6 +1,5 @@
 package com.example.campusfix.screens
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -10,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -20,8 +18,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowDownward
 import androidx.compose.material.icons.filled.ArrowUpward
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.AssistChip
-import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.FilterChip
@@ -171,41 +167,3 @@ fun PedidosListScreen(
     }
 }
 
-@Composable
-fun PedidoCard(pedido: Pedido, mostrarAutor: Boolean, onClick: () -> Unit) {
-    Card(modifier = Modifier
-        .fillMaxWidth()
-        .clickable(onClick = onClick)) {
-        Column(Modifier.padding(12.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    pedido.categorias?.nome ?: "-",
-                    style = MaterialTheme.typography.titleMedium,
-                    modifier = Modifier.weight(1f)
-                )
-                AssistChip(
-                    onClick = onClick,
-                    label = { Text(stringResource(pedido.estadoEnum.label)) }
-                )
-            }
-            Text(pedido.localizacao, style = MaterialTheme.typography.bodyMedium)
-            Text(
-                pedido.descricao,
-                style = MaterialTheme.typography.bodySmall,
-                maxLines = 2
-            )
-            Spacer(Modifier.height(4.dp))
-            Row {
-                Text(pedido.dataFormatada, style = MaterialTheme.typography.labelSmall)
-                if (mostrarAutor && pedido.profiles != null) {
-                    Spacer(Modifier.width(8.dp))
-                    Text(
-                        pedido.profiles.nome,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                }
-            }
-        }
-    }
-}

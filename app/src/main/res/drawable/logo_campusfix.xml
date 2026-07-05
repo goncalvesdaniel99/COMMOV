@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Logótipo simples: pin de localização com chave inglesa estilizada -->
+<!-- Logótipo simples: edifício do campus com chave inglesa, paleta avelã/chocolate -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="96dp"
     android:height="96dp"
     android:viewportWidth="96"
     android:viewportHeight="96">
 
-    <!-- Círculo de fundo -->
+    <!-- Círculo de fundo (chocolate) -->
     <path
         android:pathData="M48,48m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"
-        android:fillColor="#1565C0" />
+        android:fillColor="#6B4632" />
 
     <!-- Edifício (campus) -->
     <path
         android:pathData="M28,64 L28,40 L48,28 L68,40 L68,64 Z"
-        android:fillColor="#FFFFFF" />
+        android:fillColor="#FAF6F1" />
     <path
         android:pathData="M34,64 L34,46 L40,46 L40,64 Z M45,64 L45,46 L51,46 L51,64 Z M56,64 L56,46 L62,46 L62,64 Z"
-        android:fillColor="#1565C0" />
+        android:fillColor="#6B4632" />
 
-    <!-- Chave inglesa (fix) -->
+    <!-- Chave inglesa (fix, tom avelã) -->
     <path
         android:pathData="M62,18 a8,8 0 1 0 6,13.5 l8,8 4,-4 -8,-8 a8,8 0 0 0 -10,-9.5 z"
-        android:fillColor="#FFC107" />
+        android:fillColor="#D9A05B" />
 </vector>

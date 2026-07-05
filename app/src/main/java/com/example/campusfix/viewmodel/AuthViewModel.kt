@@ -14,6 +14,17 @@ class AuthViewModel : ViewModel() {
 
     val sessionStatus: StateFlow<SessionStatus> = AuthRepository.sessionStatus
 
+    init {
+        // Garante que o perfil é carregado também quando a sessão é restaurada no arranque
+        viewModelScope.launch {
+            sessionStatus.collect { status ->
+                if (status is SessionStatus.Authenticated && _perfil.value == null) {
+                    carregarPerfil()
+                }
+            }
+        }
+    }
+
     private val _perfil = MutableStateFlow<Perfil?>(null)
     val perfil: StateFlow<Perfil?> = _perfil.asStateFlow()
 

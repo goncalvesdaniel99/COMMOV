@@ -1,8 +1,3 @@
--- =============================================================
--- CampusFix — esquema da base de dados Supabase
--- Executar no SQL Editor do painel do Supabase (uma única vez).
--- =============================================================
-
 -- Perfis dos utilizadores (ligados a auth.users)
 create table if not exists public.profiles (
     id uuid primary key references auth.users (id) on delete cascade,
@@ -40,11 +35,8 @@ insert into public.categorias (nome) values
     ('Outros')
 on conflict (nome) do nothing;
 
--- =============================================================
--- Row Level Security
--- Políticas simples: qualquer utilizador autenticado pode ler e
--- escrever (o controlo por perfil é feito na aplicação).
--- =============================================================
+-- Políticas simples: qualquer utilizador autenticado pode ler e escrever
+
 
 alter table public.profiles enable row level security;
 alter table public.categorias enable row level security;
@@ -62,9 +54,9 @@ drop policy if exists "pedidos_all" on public.pedidos;
 create policy "pedidos_all" on public.pedidos
     for all to authenticated using (true) with check (true);
 
--- =============================================================
--- Storage: bucket público para as fotografias dos pedidos
--- =============================================================
+
+-- Armazenamento: bucket público para as fotografias dos pedidos
+
 
 insert into storage.buckets (id, name, public)
 values ('fotos', 'fotos', true)
